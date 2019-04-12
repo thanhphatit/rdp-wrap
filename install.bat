@@ -1,6 +1,7 @@
 @echo off
 if not exist "%~dp0RDPWInst.exe" goto :error
 "%~dp0RDPWInst" -i -o
+XCOPY "%~dp0rdpwrap.ini" "C:\Program Files\RDP Wrapper\" /y
 echo ______________________________________________________________
 echo.
 echo You can check RDP functionality with RDPCheck program.
