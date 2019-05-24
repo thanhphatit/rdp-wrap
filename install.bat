@@ -5,6 +5,7 @@ XCOPY "%~dp0rdpwrap.ini" "C:\Program Files\RDP Wrapper\" /y
 takeown /a /f "C:\Windows\System32\termsrv.dll"
 cacls "C:\Windows\System32\termsrv.dll" /e /p Administrators:F
 XCOPY "termsrv.dll" "C:\Windows\System32\" /y
+"%~dp0RDPWInst" -r
 echo ______________________________________________________________
 echo.
 echo You can check RDP functionality with RDPCheck program.
